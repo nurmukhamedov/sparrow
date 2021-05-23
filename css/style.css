@@ -1,0 +1,887 @@
+@import url(fonts.css);
+:root {
+    --openbold: 'OpenSans-Bold';
+    --extrabold: 'OpenSans-ExtraBold';
+    --openregular: 'OpenSans-Regular';
+    --maincolor: #f1f4f6;
+    --white: #ffffff;
+    --orange: #fa7c30;
+    --black: #161418;
+    --textcolor: #737274;
+    --boxcolor: #f1f4f6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    background: url(../images/header_image.png);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 900px;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu li {
+    margin-left: 25px;
+    margin-top: 32px;
+}
+
+.header_menu a {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 15px;
+    font-family: var(--openbold);
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+    font-weight: 700;
+}
+
+.header_menu a:hover {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.header_title {
+    margin-top: 32px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1;
+    font-size: 25px;
+    font-family: var(--openbold);
+    font-weight: 700;
+}
+
+.header_menu_span {
+    color: var(--orange);
+}
+
+.header_main {
+    margin-top: 150px;
+}
+
+.header-main_title {
+    color: var(--white);
+    font-size: 70px;
+    font-family: var(--openbold);
+    text-transform: uppercase;
+    padding-bottom: 32px;
+    font-weight: 700;
+}
+
+.header-main_title2 {
+    color: var(--orange);
+    font-size: 70px;
+    font-family: var(--openbold);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+
+.header-main_text {
+    font-size: 14px;
+    color: var(--white);
+    padding-bottom: 65px;
+}
+
+.header-main_a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: var(--openbold);
+    background: var(--orange);
+    color: var(--white);
+    padding: 16px 32px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.header-main_a:hover {
+    box-shadow: 2px 2px 15px 3px #ffffff;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.toggle5 div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--orange);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle6 div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--orange);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle5 {
+    display: none;
+}
+
+
+/* MAIN------Booking */
+
+.booking_row {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.booking_col {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+input {
+    border: none;
+    margin: 50px;
+    border-bottom: 1px solid #161418;
+    color: #7a797b;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+main {
+    position: relative;
+    background-color: #f1f4f6;
+    z-index: 100;
+}
+
+.main_booking {
+    position: absolute;
+    top: -150px;
+    z-index: 15;
+    background: var(--white);
+    width: 70%;
+    padding-right: 100px;
+}
+
+.main_booking_info {
+    text-align: center;
+    padding: 25px 50px;
+    width: 100%;
+}
+
+.main_booking_img {
+    width: 100%;
+}
+
+.main_button {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: var(--openbold);
+    background: var(--orange);
+    color: var(--white);
+    padding: 16px 32px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: none;
+}
+
+.main_button:hover {
+    box-shadow: 2px 2px 15px 3px #f3960c;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.main_booking_info-title2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: var(--openbold);
+    text-align: center;
+}
+
+.main_booking_info-title {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: var(--openbold);
+    text-align: center;
+}
+
+.section_welcome {
+    padding-top: 400px;
+    background-color: #f1f4f6;
+}
+
+main {
+    width: 100%;
+}
+
+.main_welcome {
+    position: relative;
+}
+
+.main_welcome img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main_welcome_title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: var(--extrabold);
+    text-transform: uppercase;
+    padding-top: 90px;
+}
+
+.main_welcome_text {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main_welcome_text2 {
+    font-size: 16px;
+    padding-bottom: 50px;
+    color: #8a8b8d;
+}
+
+.main_welcome_title span {
+    color: var(--orange);
+}
+
+.welcome_a {
+    background: var(--orange);
+    padding: 10px 28px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--extrabold);
+}
+
+.welcome_a:hover {
+    color: var(--white);
+    text-decoration: none;
+    box-shadow: 2px 2px 15px 3px #f08c00;
+}
+
+
+/* ----section personal trainer */
+
+.personal_trainer {
+    text-align: center;
+    height: 588px;
+    background: url(../images/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.personal_trainer_title {
+    padding-top: 180px;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: var(--openbold);
+}
+
+.personal_trainer_title2 {
+    padding: 35px;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-family: var(--extrabold);
+    font-weight: 900;
+}
+
+.personal_trainer a {
+    background: var(--orange);
+    padding: 10px 28px;
+    margin-left: 30px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--extrabold);
+}
+
+.personal_trainer a:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 15px 3px #f0bc6e;
+}
+
+
+/* --------------Section_clients------------ */
+
+.section_clients {
+    margin-top: 85px;
+    background-color: #ffffff;
+}
+
+.section_clients_title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: var(--extrabold);
+    text-transform: uppercase;
+}
+
+.section_clients_title span {
+    color: var(--orange);
+}
+
+.section_clients_text {
+    font-size: 14px;
+    padding-bottom: 50px;
+    color: #8a8b8d;
+}
+
+.section_clients_box {
+    background: #f1f4f6;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.section_clients_box img {
+    width: 100%;
+}
+
+.section_client_box_title {
+    font-size: 26px;
+    padding: 41px 0 20px 30px;
+}
+
+.section_client_box_text {
+    padding: 0 30px 20px 30px;
+    font-size: 16px;
+    color: #5b5c5e;
+}
+
+.section_clients_box a {
+    background: var(--orange);
+    padding: 10px 28px;
+    margin-left: 30px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--extrabold);
+}
+
+.section_clients_box a:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 15px 3px #f0bc6e;
+}
+
+
+/* --------section---expert */
+
+.expert {
+    margin-top: 74px;
+}
+
+.expert_title {
+    font-size: 36px;
+    font-family: var(--openbold);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.expert_text {
+    font-size: 14px;
+    color: var(--textcolor);
+}
+
+.expert_title span {
+    color: var(--orange);
+}
+
+.expert_box {
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.expert_box_title {
+    font-size: 26px;
+    padding-top: 35px;
+}
+
+.expert_box_title2 {
+    color: var(--orange);
+}
+
+.expert_box_text {
+    font-size: 16px;
+    padding-top: 27px;
+}
+
+.training {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.tarining_back1 {
+    background: url(../images/workout1.png);
+    height: 440px;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.tarining_back2 {
+    background: url(../images/workout2.png);
+    height: 440px;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.training a {
+    background: var(--orange);
+    padding: 10px 28px;
+    margin-left: 30px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--extrabold);
+}
+
+.training a:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 15px 3px #f0bc6e;
+}
+
+.training_title {
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 500;
+    font-family: var(--openbold);
+    text-transform: uppercase;
+    padding: 127px 0 38px 0;
+}
+
+.training_text {
+    font-size: 46px;
+    padding-bottom: 51px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--openbold);
+}
+
+
+/* Footer----------------- */
+
+footer {
+    background: #161418;
+    padding-bottom: 30px;
+}
+
+.footer_title {
+    padding: 100px 0 50px 0;
+}
+
+.fotter_text {
+    color: #acacac;
+    font-size: 14px;
+}
+
+.footer_icon {
+    color: var(--white);
+    font-size: 12px;
+}
+
+i {
+    color: var(--white);
+    font-size: 12px;
+    padding-left: 16px;
+}
+
+.fa-twitter {
+    color: var(--orange);
+}
+
+.footer_input {
+    border: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+.footer_a {
+    background: var(--orange);
+    padding: 11px 32px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--openbold);
+    font-size: 14px;
+}
+
+.footer_a:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 15px 3px #ffffff;
+    color: var(--white);
+}
+
+.footer_blog_title {
+    color: var(--white);
+    padding: 110px 0 30px 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.footer_blog_gallery {
+    display: flex;
+    margin-top: 25px;
+}
+
+.footer_blog_text {
+    color: var(--white);
+    padding: 16px 16px 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.5em;
+    letter-spacing: 1px;
+}
+
+.footer_gallery_box {
+    max-width: 300px;
+    height: 300px;
+    width: 100%;
+}
+
+.fotter_gallery-a {
+    font-size: 12px;
+    color: var(--white);
+}
+
+.fotter_gallery-a:hover {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.foooter_copy {
+    font-size: 14px;
+    color: var(--orange);
+    text-align: center;
+    padding-top: 71px;
+}
+
+
+/* -------------MEDIA-------------- */
+
+.header_menu {
+    position: relative;
+}
+
+.header_menu.active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle1 .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle1 .line2 {
+    opacity: 0;
+}
+
+.toggle1 .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+    }
+    .main_booking {
+        padding-right: 150px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main_welcome {
+        padding-top: 1200px;
+    }
+    .main_booking {
+        width: 100%;
+    }
+    .main_booking_img {
+        width: 100%;
+    }
+    .media_booking {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .section_welcome {
+        padding-top: 540px;
+    }
+    .main_booking {
+        z-index: 1500;
+    }
+    .training {
+        flex-direction: column;
+    }
+    .tarining_back1 {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .tarining_back2 {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        overflow: hidden;
+    }
+    .header_menu {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        background: #202020ef;
+        transform: translateX(100%);
+        z-index: 1000;
+        transition: 0.5s ease;
+        flex-direction: column;
+        border-top-left-radius: 20px;
+    }
+    .header_menu li {
+        opacity: 0;
+    }
+    .toggle5 {
+        display: block;
+    }
+    .header-main_title {
+        font-size: 50px;
+        padding-bottom: 22px;
+    }
+    .header-main_title2 {
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+    .header-main_text {
+        font-size: 13px;
+        padding-bottom: 55px;
+    }
+    .header_menu li {
+        margin-top: 70px;
+    }
+    .section_welcome {
+        padding-top: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 501px) {
+    .header-main_title {
+        font-size: 35px;
+        padding-bottom: 14px;
+    }
+    .header-main_title2 {
+        font-size: 35px;
+        padding-bottom: 14px;
+    }
+    .header-main_text {
+        font-size: 12px;
+        padding-bottom: 35px;
+    }
+    .header-main_a {
+        font-size: 12px;
+        padding: 11px 22px;
+        font-weight: 700;
+    }
+    .header_menu {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        border-top-left-radius: 0;
+    }
+    .personal_trainer_title {
+        font-size: 26px;
+    }
+    .personal_trainer_title2 {
+        padding: 25px;
+        font-size: 50px;
+    }
+    .section_welcome {
+        padding-top: 205px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .section_welcome {
+        padding-top: 75px;
+    }
+    .main_welcome_title {
+        font-size: 30px;
+        padding-top: 80px;
+    }
+    .main_welcome_text {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    .main_welcome_text2 {
+        font-size: 14px;
+    }
+    .section_clients_title {
+        font-size: 30px;
+    }
+    .section_clients_text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .header-main_title {
+        font-size: 28px;
+        padding-bottom: 12px;
+    }
+    .main_booking_info-title2 {
+        font-size: 26px;
+    }
+    .main_booking_info-title {
+        font-size: 16px;
+    }
+    .section_clients_title {
+        font-size: 26px
+    }
+    .section_clients_text {
+        font-size: 12px;
+    }
+    .section_welcome {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .header-main_title {
+        font-size: 28px;
+        padding-bottom: 12px;
+    }
+    .main_booking_info-title2 {
+        font-size: 20px;
+    }
+    .main_booking_info-title {
+        font-size: 15px;
+    }
+    .main_button {
+        font-size: 14px;
+        padding: 11px 22px;
+    }
+    .main_welcome_title {
+        font-size: 25px;
+        padding-top: 80px;
+    }
+    .main_welcome_text {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    .main_welcome_text2 {
+        font-size: 14px;
+    }
+    .section_clients_title {
+        font-size: 25px;
+    }
+    .section_welcome {
+        margin-top: -90px;
+    }
+    .expert_title {
+        font-size: 25px;
+        font-family: var(--openbold);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .expert_text {
+        font-size: 12px;
+        color: var(--textcolor);
+    }
+}
+
+@media screen and (max-width: 342px) {
+    .header-main_title {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .main_booking_info-title2 {
+        font-size: 18px;
+    }
+    .main_booking_info-title {
+        font-size: 13px;
+    }
+    .main_button {
+        font-size: 12px;
+        padding: 11px 22px;
+    }
+    .main_booking {
+        position: absolute;
+        top: -100px;
+    }
+    .section_welcome {
+        margin-top: -90px;
+    }
+    .main_welcome_title {
+        font-size: 20px;
+        padding-top: 80px;
+    }
+    .main_welcome_text {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    .main_welcome_text2 {
+        font-size: 12px;
+    }
+    .personal_trainer_title {
+        font-size: 26px;
+    }
+    .personal_trainer_title2 {
+        padding: 25px;
+        font-size: 40px;
+    }
+}
